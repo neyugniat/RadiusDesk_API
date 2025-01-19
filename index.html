@@ -14,16 +14,14 @@
     <script>
         window.onload = () => {
             window.ui = SwaggerUIBundle({
-                url: 'RadiusDesk.yaml', // Local YAML file
-                // Alternatively, you can point directly to your Laravel project:
-                // url: 'https://your-laravel-domain.com/portal_manager/public/api_call/RadiusDesk.yaml',
+                url: 'RadiusDesk_API.yaml', // Path to your YAML file
                 dom_id: '#swagger-ui',
                 deepLinking: true,
                 presets: [
                     SwaggerUIBundle.presets.apis,
                     SwaggerUIBundle.SwaggerUIStandalonePreset
                 ],
-                layout: "StandaloneLayout"
+                layout: "BaseLayout" // Changed layout to BaseLayout
             });
         };
     </script>
